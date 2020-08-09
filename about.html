@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>19ninetyfive</title>
+    <link rel="icon" href="images/1995_logo_circle.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+      }
+
+      /* Create four equal columns that sits next to each other */
+      .column {
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+      }
+
+      .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+      }
+
+      /* Responsive layout - makes a two column-layout instead of four columns */
+      @media screen and (max-width: 800px) {
+        .column {
+          flex: 50%;
+          max-width: 50%;
+        }
+      }
+
+      /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+        .column {
+          flex: 100%;
+          max-width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <!-- Header ===================================================================== -->
+  <header class="cd-header">
+    <div class="header-wrapper">
+      <div class="logo-wrap">
+
+
+        <a  href="#" class="hover-target">About</a>
+      </div>
+
+      <div class="nav-but-wrap">
+        <div class="menu-icon hover-target">
+          <span class="menu-icon__line menu-icon__line-left"></span>
+          <span class="menu-icon__line"></span>
+          <span class="menu-icon__line menu-icon__line-right"></span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Nav ===================================================================== -->
+  <div class="nav">
+    <div class="nav__content">
+      <ul class="nav__list">
+        <li class="nav__list-item "><a href="index.html" class="hover-target">home</a></li>
+        <li class="nav__list-item"><a href="portfolio.html" class="hover-target">Creations</a></li>
+        <li class="nav__list-item active-nav"><a href="about.html" class="hover-target">About</a></li>
+        <!-- <li class="nav__list-item"><a href="contact.html" class="hover-target">Contact</a></li> -->
+      </ul>
+    </div>
+  </div>
+  <body id="test">
+    <div class="section full-height over-hide">
+      <div class="switch-wrap-body">
+        <h1 ></h1>
+        <div  class="">
+          <img style="height:50%; width:50%; transition:1s;" src="images/1995_logo.png">
+        </div>
+        <p>The odds of producing an influential or successful idea are a positive function of the total number of ideas generated. We create and launch businesses, art and visions. Great creators don’t necessarily have the deepest expertise but rather seek out the broadest perspectives. There’s one thing worse than change and that’s the status quo.There is one path in the world that none can walk but you. Where does it lead? Don’t ask, walk!</p>
+
+      </div>
+    </div>
+
+    <div class='cursor' id="cursor"></div>
+    <div class='cursor2' id="cursor2"></div>
+    <div class='cursor3' id="cursor3"></div>
+  </body>
+  <!-- Link to page ===================================================================== -->
+  <a href="nike.com"      class="link-to-portfolio hover-target" target=”_blank”></a>
+  <script src="script.js" charset="utf-8"></script>
+</html>
